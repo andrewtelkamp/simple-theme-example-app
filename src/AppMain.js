@@ -1,48 +1,43 @@
+import React, {memo} from 'react';
+import {View} from 'react-native';
+import {theme} from 'simple-theme';
 
-import React, { memo } from 'react'
-import { View } from 'react-native'
-import { theme } from 'react-native-simple-theme'
-
-import { THEME_NAMES } from './models'
-import { Button } from './Button'
-import { Title } from './Title'
-
-
+import {THEME_NAMES} from './models';
+import {Button} from './Button';
+import {Title} from './Title';
 
 export default AppMain = memo(() => {
-  const styles = themedStyles()
-  const activeThemeName = theme.getActiveThemeName()
+  const styles = themedStyles();
+  const activeThemeName = theme.getActiveThemeName();
 
   return (
-    <View style={ styles.screen }>
-      <View style={ styles.titleWrap }>
-        <Title text={ activeThemeName } />
+    <View style={styles.screen}>
+      <View style={styles.titleWrap}>
+        <Title text={activeThemeName} />
       </View>
 
       <Button
         title="Default Theme"
-        onPress={ () => theme.setActiveTheme(THEME_NAMES.STANDARD) }
+        onPress={() => theme.setActiveTheme(THEME_NAMES.STANDARD)}
       />
 
       <Button
         title="Dark Theme"
-        onPress={ () => theme.setActiveTheme(THEME_NAMES.DARK) }
+        onPress={() => theme.setActiveTheme(THEME_NAMES.DARK)}
       />
 
       <Button
         title="Gray Theme"
-        onPress={ () => theme.setActiveTheme(THEME_NAMES.GRAY) }
+        onPress={() => theme.setActiveTheme(THEME_NAMES.GRAY)}
       />
 
       <Button
         title="Pastel Theme"
-        onPress={ () => theme.setActiveTheme(THEME_NAMES.PASTEL) }
+        onPress={() => theme.setActiveTheme(THEME_NAMES.PASTEL)}
       />
-
     </View>
-  )
-})
-
+  );
+});
 
 const themedStyles = () => ({
   screen: {
@@ -55,5 +50,5 @@ const themedStyles = () => ({
   },
   titleWrap: {
     paddingBottom: 100,
-  }
-})
+  },
+});

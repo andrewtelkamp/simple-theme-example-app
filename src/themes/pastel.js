@@ -1,12 +1,11 @@
-
-import { THEME_NAMES } from '../models'
+import {THEME_NAMES} from '../models';
 
 const COLORS = {
   RED: '#f76c5e',
   YELLOW: '#f5dd90',
   PURPLE: '#88498f',
   WHITE: '#fff',
-}
+};
 
 export const pastelTheme = {
   name: THEME_NAMES.PASTEL,
@@ -34,7 +33,7 @@ export const pastelTheme = {
     },
     fontWeights: {
       button: '500',
-      title: '700'
-    }
+      title: '700',
+    },
   },
-}
+};

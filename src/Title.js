@@ -1,19 +1,12 @@
+import React, {memo} from 'react';
+import {Text} from 'react-native';
+import {theme} from 'simple-theme';
 
-import React, { memo } from 'react'
-import { Text } from 'react-native'
-import { theme } from 'react-native-simple-theme'
+export const Title = memo(({text}) => {
+  const styles = themedStyles();
 
-
-export const Title = memo(({ text }) => {
-  const styles = themedStyles()
-
-  return (
-    <Text style={ styles.text }>
-      { text }
-    </Text>
-  )
-})
-
+  return <Text style={styles.text}>{text}</Text>;
+});
 
 const themedStyles = () => ({
   text: {
@@ -22,4 +15,4 @@ const themedStyles = () => ({
     fontStyle: theme.active.fontStyles.title,
     fontWeight: theme.active.fontWeights.title,
   },
-})
+});

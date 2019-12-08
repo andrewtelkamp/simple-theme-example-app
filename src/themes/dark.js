@@ -1,11 +1,10 @@
-
-import { THEME_NAMES } from '../models'
+import {THEME_NAMES} from '../models';
 
 const COLORS = {
   BLACK: '#000',
   PURPLE: '#5959ff',
   WHITE: '#fff',
-}
+};
 
 export const darkTheme = {
   name: THEME_NAMES.DARK,
@@ -33,7 +32,7 @@ export const darkTheme = {
     },
     fontWeights: {
       button: '400',
-      title: '800'
+      title: '800',
     },
   },
-}
+};

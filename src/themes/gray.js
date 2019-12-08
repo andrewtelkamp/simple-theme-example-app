@@ -1,10 +1,9 @@
-
-import { THEME_NAMES } from '../models'
+import {THEME_NAMES} from '../models';
 
 const COLORS = {
   DARK_GRAY: '#ccc',
   GRAY: '#222',
-}
+};
 
 export const grayTheme = {
   name: THEME_NAMES.GRAY,
@@ -32,7 +31,7 @@ export const grayTheme = {
     },
     fontWeights: {
       button: '800',
-      title: '300'
-    }
+      title: '300',
+    },
   },
-}
+};

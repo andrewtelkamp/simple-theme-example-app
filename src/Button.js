@@ -1,24 +1,18 @@
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {theme} from 'simple-theme';
 
-import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
-import { theme } from 'react-native-simple-theme'
-
-
-export const Button = ({ onPress, title }) => {
-  const styles = themedStyles()
+export const Button = ({onPress, title}) => {
+  const styles = themedStyles();
 
   return (
-    <View style={{ flexDirection: 'row' }}>
-      <TouchableOpacity
-        onPress={ onPress }
-        style={ styles.button }
-      >
-        <Text style={ styles.text }>{ title }</Text>
+    <View style={{flexDirection: 'row'}}>
+      <TouchableOpacity onPress={onPress} style={styles.button}>
+        <Text style={styles.text}>{title}</Text>
       </TouchableOpacity>
     </View>
-  )
-}
-
+  );
+};
 
 const themedStyles = () => ({
   button: {
@@ -36,4 +30,4 @@ const themedStyles = () => ({
     fontStyle: theme.active.fontStyles.button,
     fontWeight: theme.active.fontWeights.button,
   },
-})
+});
