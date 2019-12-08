@@ -1,6 +1,8 @@
 
 # Startup and Usage
 
-```yarn install```
-```npm run pods```
-```npm run ios```
+clone the repo
+
+```yarn install```<br />
+```npm run pods```<br />
+```npm run ios```<br />
