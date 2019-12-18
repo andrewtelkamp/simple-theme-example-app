@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "simple-theme": "0.0.7"
+    "simple-theme": "https://github.com/andrewtelkamp/simple-theme"
   },
   "jest": {
     "preset": "react-native"
