@@ -1,15 +1,9 @@
-import {THEME_NAMES} from '../models';
-
-const COLORS = {
-  RED: '#f76c5e',
-  YELLOW: '#f5dd90',
-  PURPLE: '#88498f',
-  WHITE: '#fff',
-};
+import {baseStyles, COLORS, THEME_NAMES} from './config';
 
 export const pastelTheme = {
   name: THEME_NAMES.PASTEL,
   styles: {
+    ...baseStyles,
     borders: {
       button: 25,
     },
@@ -30,10 +24,6 @@ export const pastelTheme = {
     fontStyles: {
       button: 'italic',
       title: 'italic',
-    },
-    fontWeights: {
-      button: '500',
-      title: '700',
     },
   },
 };

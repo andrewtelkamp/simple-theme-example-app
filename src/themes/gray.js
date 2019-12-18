@@ -1,13 +1,9 @@
-import {THEME_NAMES} from '../models';
-
-const COLORS = {
-  DARK_GRAY: '#ccc',
-  GRAY: '#222',
-};
+import {baseStyles, COLORS, THEME_NAMES} from './config';
 
 export const grayTheme = {
   name: THEME_NAMES.GRAY,
   styles: {
+    ...baseStyles,
     borders: {
       button: 8,
     },
@@ -24,10 +20,6 @@ export const grayTheme = {
     fontSizes: {
       button: 12,
       title: 18,
-    },
-    fontStyles: {
-      button: 'normal',
-      title: 'normal',
     },
     fontWeights: {
       button: '800',

@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import {View} from 'react-native';
 import {theme} from 'simple-theme';
 
-import {THEME_NAMES} from './models';
+import {THEME_NAMES} from './themes/config';
 import {Button} from './Button';
 import {Title} from './Title';
 
